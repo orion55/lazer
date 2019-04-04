@@ -138,9 +138,9 @@
 </footer>
 
 <?php wp_footer(); ?>
-<link rel="stylesheet" href="//cdn.envybox.io/widget/cbk.css">
+<!--<link rel="stylesheet" href="//cdn.envybox.io/widget/cbk.css">
 <script type="text/javascript" src="//cdn.envybox.io/widget/cbk.js?wcb_code=9655fb2bd1ab9c0f85c9c4dd1e873662"
-        charset="UTF-8" async></script>
+        charset="UTF-8" async></script>-->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
   (function (m, e, t, r, i, k, a) {
