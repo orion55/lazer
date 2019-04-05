@@ -412,6 +412,20 @@ function llorix_one_lite_wrapper_start()
 {
     echo '</div> </header>';
     echo '<div class="content-wrap"><div class="container">';
+    if ((is_shop() || is_product_tag() || is_product_category()) && is_active_sidebar('widget-areas-1212')) {
+        echo '<div id="sidebar-secondary" class="widget-area col-md-3 sidebar-shop" role="complementary">';
+        dynamic_sidebar('widget-areas-1212');
+        echo '</div>';
+        echo '<div id="primary" class="content-area col-md-9">';
+    } else {
+        echo '<div id="primary" class="content-area col-md-12">';
+    }
+}
+
+/*function llorix_one_lite_wrapper_start()
+{
+    echo '</div> </header>';
+    echo '<div class="content-wrap"><div class="container">';
     if ((is_shop() || is_product_tag() || is_product_category()) && is_active_sidebar('llorix-one-sidebar-shop-archive')) {
         echo '<div id="sidebar-secondary" class="widget-area col-md-3 sidebar-shop" role="complementary">';
         dynamic_sidebar('llorix-one-sidebar-shop-archive');
@@ -420,8 +434,7 @@ function llorix_one_lite_wrapper_start()
     } else {
         echo '<div id="primary" class="content-area col-md-12">';
     }
-}
-
+}*/
 /**
  * WooCommerce Wrapper end.
  */
@@ -432,6 +445,7 @@ function llorix_one_lite_wrapper_end()
 
 // add this code directly, no action needed
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
 
 /* tgm-plugin-activation */
 require_once get_template_directory() . '/class-tgm-plugin-activation.php';

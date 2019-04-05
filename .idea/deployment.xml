@@ -9,7 +9,7 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="localhost">
+      <paths name="lazer-beauty">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

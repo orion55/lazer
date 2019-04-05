@@ -6946,3 +6946,39 @@ a.clickBuyButton.button21:active {
     background: #B55118;
     border: 1px solid #B55118;
 }
+
+#primary {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+header.woocommerce-products-header {
+    order: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#sidebar-secondary {
+    order: 1;
+    border-left: none;
+}
+
+.widget.woocommerce input[type="search"] {
+    padding-right: 0;
+    margin-bottom: 5px;
+}
+
+.woocommerce .products .product .button {
+    line-height: normal;
+}
+
+#sidebar-secondary .widget {
+    margin-bottom: 40px;
+}
