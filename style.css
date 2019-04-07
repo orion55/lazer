@@ -6958,11 +6958,12 @@ header.woocommerce-products-header {
     order: 1;
 }
 
-.container {
+.section-overlay-layer .container, .content-wrap .container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #sidebar-secondary {
@@ -7034,7 +7035,7 @@ div.comment-form-rating {
 }
 
 @media only screen and (min-device-width: 768px) and (max-width: 1199px) {
-    .container {
+    .section-overlay-layer .container, .content-wrap .container {
         flex-direction: column;
     }
 
@@ -7052,7 +7053,7 @@ div.comment-form-rating {
 }
 
 @media only screen and (max-width: 767px) {
-    .container {
+    .section-overlay-layer .container, .content-wrap .container {
         flex-direction: column;
     }
 
