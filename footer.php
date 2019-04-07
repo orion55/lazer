@@ -8,14 +8,16 @@
  */
 ?>
 
-<footer itemscope itemtype="//schema.org/WPFooter" id="footer" role="contentinfo" class="footer grey-bg">
+<footer itemscope itemtype="//schema.org/WPFooter" id="footer" role="contentinfo"
+        class="footer grey-bg">
 
     <div class="container">
         <div class="footer-widget-wrap">
             <?php
             if (is_active_sidebar('footer-area')) {
                 ?>
-                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-1"
+                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary"
+                     id="sidebar-widgets-area-1"
                      class="col-md-3 col-sm-6 col-xs-12 widget-box"
                      aria-label="<?php esc_html_e('Widgets Area 1', 'llorix-one-lite'); ?>">
                     <?php
@@ -26,7 +28,8 @@
             }
             if (is_active_sidebar('footer-area-2')) {
                 ?>
-                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-2"
+                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary"
+                     id="sidebar-widgets-area-2"
                      class="col-md-3 col-sm-6 col-xs-12 widget-box"
                      aria-label="<?php esc_html_e('Widgets Area 2', 'llorix-one-lite'); ?>">
                     <?php
@@ -37,7 +40,8 @@
             }
             if (is_active_sidebar('footer-area-3')) {
                 ?>
-                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-3"
+                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary"
+                     id="sidebar-widgets-area-3"
                      class="col-md-3 col-sm-6 col-xs-12 widget-box"
                      aria-label="<?php esc_html_e('Widgets Area 3', 'llorix-one-lite'); ?>">
                     <?php
@@ -48,7 +52,8 @@
             }
             if (is_active_sidebar('footer-area-4')) {
                 ?>
-                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-4"
+                <div itemscope itemtype="//schema.org/WPSideBar" role="complementary"
+                     id="sidebar-widgets-area-4"
                      class="col-md-3 col-sm-6 col-xs-12 widget-box"
                      aria-label="<?php esc_html_e('Widgets Area 4', 'llorix-one-lite'); ?>">
                     <?php
@@ -78,7 +83,7 @@
             /* OPTIONAL FOOTER LINKS */
 
             echo '<div itemscope role="navigation" itemtype="//schema.org/SiteNavigationElement" id="menu-secondary" aria-label="' . esc_html__('Secondary Menu', 'llorix-one-lite') . '">';
-            echo '<h1 class="screen-reader-text">' . esc_html__('Secondary Menu', 'llorix-one-lite') . '</h1>';
+            echo '<div class="screen-reader-text">' . esc_html__('Secondary Menu', 'llorix-one-lite') . '</div>';
             wp_nav_menu(
                 array(
                     'theme_location' => 'llorix_one_lite_footer_menu',
@@ -115,38 +120,46 @@
               s.type = 'text/javascript'
               s.charset = 'UTF-8'
               s.async = true
-              s.src = ('' == w.location.protocol ? 'https' : 'http') + '://w.uptolike.com/widgets/v1/uptolike.js'
+              s.src = ('' == w.location.protocol
+                ? 'https'
+                : 'http') + '://w.uptolike.com/widgets/v1/uptolike.js'
               var h = d[g]('body')[0]
               h.appendChild(s)
             }
           })(window, document)
         </script>
         <div data-mobile-view="true" data-share-size="30" data-follow-button-text="ПРИСОЕДИНЯЙСЯ"
-             data-like-text-enable="false" data-additional-network-text="а ещё мы есть: //vk.com/dmi3_tattoo"
-             data-background-alpha="0.0" data-pid="1800182" data-mode="share" data-background-color="#ffffff"
-             data-hover-effect="scale" data-share-shape="round" data-share-counter-size="12" data-icon-color="#ffffff"
-             data-mobile-sn-ids="fb.vk.tw.ok.wh.vb.tm." data-text-color="#000000" data-buttons-color="#ffffff"
+             data-like-text-enable="false"
+             data-additional-network-text="а ещё мы есть: //vk.com/dmi3_tattoo"
+             data-background-alpha="0.0" data-pid="1800182" data-mode="share"
+             data-background-color="#ffffff"
+             data-hover-effect="scale" data-share-shape="round" data-share-counter-size="12"
+             data-icon-color="#ffffff"
+             data-mobile-sn-ids="fb.vk.tw.ok.wh.vb.tm." data-text-color="#000000"
+             data-buttons-color="#ffffff"
              data-counter-background-color="#fbf5f5" data-share-counter-type="disable"
-             data-follow-text="У нас есть группа : а ещё мы есть: //vk.com/dmi3_tattoo" data-orientation="fixed-bottom"
+             data-follow-text="У нас есть группа : а ещё мы есть: //vk.com/dmi3_tattoo"
+             data-orientation="fixed-bottom"
              data-following-enable="false" data-sn-ids="fb.vk.tw.ok.tm." data-preview-mobile="false"
              data-selection-enable="false" data-follow-title="Присоединяйся к нам в Соц.сетях!"
              data-exclude-show-more="true" data-share-style="11" data-counter-background-alpha="1.0"
              data-top-button="false" class="uptolike-buttons"></div>
-<!--        --><?php //echo apply_filters('llorix_one_plus_footer_text_filter', '<div class="powered-by"><a href="//themeisle.com/themes/llorix-one/" rel="nofollow">Llorix One Lite </a>' . esc_html__('powered by', 'llorix-one-lite') . ' <a href="//wordpress.org/" rel="nofollow">' . esc_html__('WordPress', 'llorix-one-lite') . '</a></div>'); ?>
     </div><!-- container -->
 
 </footer>
 
 <?php wp_footer(); ?>
-<!--<link rel="stylesheet" href="//cdn.envybox.io/widget/cbk.css">
+<link rel="stylesheet" href="//cdn.envybox.io/widget/cbk.css">
 <script type="text/javascript" src="//cdn.envybox.io/widget/cbk.js?wcb_code=9655fb2bd1ab9c0f85c9c4dd1e873662"
-        charset="UTF-8" async></script>-->
+        charset="UTF-8" async></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
   (function (m, e, t, r, i, k, a) {
     m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}
     m[i].l = 1 * new Date()
-    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+      k,
+      a)
   })
   (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
 
@@ -154,11 +167,12 @@
     clickmap: true,
     trackLinks: true,
     accurateTrackBounce: true,
-    webvisor: true
+    webvisor: true,
   })
 </script>
 <noscript>
-    <div><img src="https://mc.yandex.ru/watch/43854274" style="position:absolute; left:-9999px;" alt=""/></div>
+    <div><img src="https://mc.yandex.ru/watch/43854274" style="position:absolute; left:-9999px;"
+              alt=""/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
 </body>

@@ -204,7 +204,7 @@ if (!empty($llorix_one_lite_enable_move) && $llorix_one_lite_enable_move) {
 
                         echo '<div class="header-logo-wrap text-header llorix_one_lite_only_customizer">';
 
-                        echo '<h1 itemprop="headline" id="site-title" class="site-title"><a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name', 'display')) . '" rel="home">' . get_bloginfo('name') . '</a></h1>';
+                        echo '<div itemprop="headline" id="site-title" class="site-title"><a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name', 'display')) . '" rel="home">' . get_bloginfo('name') . '</a></div>';
 
                         echo '<p itemprop="description" id="site-description" class="site-description">' . get_bloginfo('description') . '</p>';
 

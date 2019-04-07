@@ -4,7 +4,7 @@ Theme URI: http://themeisle.com/themes/llorix-one/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
 Description: Llorix One Lite is a free and beautiful one page business WordPress theme, with a flat and clean bootstrap based design and an elegant parallax effect. It provides a simple,minimal and modern look that can be used for any kind of personal businesses or startup mobile app. The landing page has a fullscreen hero image and blue & orange appearance with buttons and icons promoting simplicity and elegance at their best. The theme provides a responsive blog section, is eCommerce ready (WooCommerce store compatible), WPML, bbPress, Photo Gallery Grid,Contact Form 7,Meta Slider,SiteOrigin Page Builder, JetPack compatible  and SEO friendly. You can use it for your business / startup shop, agency, corporate website, or photography portfolio.
-Version: 0.2.17
+Version: 100.2.17
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: llorix-one-lite
@@ -6981,4 +6981,86 @@ header.woocommerce-products-header {
 
 #sidebar-secondary .widget {
     margin-bottom: 40px;
+}
+
+.woocommerce a.button:hover, .woocommerce button.button:hover {
+    border: 1px solid #f16c20;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+    background-color: #f16c20;
+}
+
+.woocommerce div.product div.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.woocommerce div.product form.cart {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yith-wcwl-add-to-wishlist {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.comment-form label {
+    display: block;
+    position: static;
+}
+
+div.comment-form-rating {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.woocommerce #review_form #respond p {
+    margin-bottom: 0;
+}
+
+.comment-form p {
+    padding-left: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 1199px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .woocommerce ul.products li.product .button, .woocommerce .products .product .button {
+        padding: 10px;
+    }
+
+    .woocommerce div.product {
+        width: 100%;
+    }
+
+    #primary {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 100%;
+    }
+
+    .woocommerce ul.products li.product .button, .woocommerce .products .product .button {
+        padding: 10px;
+    }
 }

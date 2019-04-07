@@ -67,7 +67,7 @@
 				</a>
 			</div><!-- .entry-meta -->
 
-		<?php the_title( sprintf( '<h1 class="entry-title" itemprop="headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>', apply_filters( 'llorix_one_lite_filter_article_title_on_index', true ) ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title" itemprop="headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>', apply_filters( 'llorix_one_lite_filter_article_title_on_index', true ) ); ?>
 		<div class="colored-line-left"></div>
 		<div class="clearfix"></div>
 
