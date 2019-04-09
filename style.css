@@ -7050,6 +7050,7 @@ div.comment-form-rating {
     #primary {
         margin: 0;
     }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -7063,5 +7064,13 @@ div.comment-form-rating {
 
     .woocommerce ul.products li.product .button, .woocommerce .products .product .button {
         padding: 10px;
+    }
+
+    .woocommerce div.product {
+        width: 100%;
+    }
+
+    header.woocommerce-products-header {
+        width: 100%;
     }
 }

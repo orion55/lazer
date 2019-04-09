@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="f94b4dcf-4ed5-43a7-9ce8-50e09228b4d0" name="grol55wy.beget.tech_lazer" url="http://grol55wy.beget.tech">
-        <fileTransfer host="grol55wy.beget.tech" port="21" rootFolder="/wp-content/themes/llorix-one-lite">
+      <webServer id="31a37968-a2ed-4860-94d8-d3f1d6582988" name="fortuna.timeweb.ru" url="https://lazer-beauty.ru/">
+        <fileTransfer host="92.53.114.85" port="21" rootFolder="/lazer-beauty.ru/public_html/wp-content/themes/llorix-one-lite">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

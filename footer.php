@@ -122,7 +122,7 @@
               s.async = true
               s.src = ('' == w.location.protocol
                 ? 'https'
-                : 'http') + '://w.uptolike.com/widgets/v1/uptolike.js'
+                : 'https') + '://w.uptolike.com/widgets/v1/uptolike.js'
               var h = d[g]('body')[0]
               h.appendChild(s)
             }
