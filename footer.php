@@ -113,7 +113,7 @@
             'border=\'0\' width=\'31\' height=\'31\'><\/a>')
         </script><!--/LiveInternet-->
 
-        <script type="text/javascript">(function (w, doc) {
+        <!--<script type="text/javascript">(function (w, doc) {
             if (!w.__utlWdgt) {
               w.__utlWdgt = true
               var d = doc, s = d.createElement('script'), g = 'getElementsByTagName'
@@ -127,7 +127,8 @@
               h.appendChild(s)
             }
           })(window, document)
-        </script>
+        </script>-->
+
         <div data-mobile-view="true" data-share-size="30" data-follow-button-text="ПРИСОЕДИНЯЙСЯ"
              data-like-text-enable="false"
              data-additional-network-text="а ещё мы есть: //vk.com/dmi3_tattoo"
